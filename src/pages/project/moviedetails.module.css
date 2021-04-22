@@ -8,8 +8,6 @@
 
 .row2 {
   padding-top: 3%;
-  margin-left: 4%;
-  margin-right: 4%;
   background-color: #F5F6F8;
 }
 
@@ -67,4 +65,10 @@
 .synopsisBody {
   font-weight: bold;
   font-family: 'Mulish', serif;
+}
+
+.showTimes {
+  font-weight: bold;
+  font-family: 'Mulish', serif;
+  align-tracks: center;
 }

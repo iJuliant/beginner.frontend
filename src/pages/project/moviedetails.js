@@ -49,9 +49,9 @@ class Home extends Component {
           </Col>
         </Row>
 
-        <Row className={styles.row2}>
-          <h4>Showtimes and Tickets</h4>
-        </Row>
+        {/* <Row className={styles.row2}>
+          <h4 className={styles.showTimes}>Showtimes and Tickets</h4>
+        </Row> */}
 
 
         <Row className={styles.row2}>

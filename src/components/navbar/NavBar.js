@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavDropdown, Button } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import navBarLogo from "../../assets/navbar-logo.png"
 import styles from "./navbar.module.css"
 
@@ -17,10 +18,10 @@ class NavBar extends Component {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#home">Movies</Nav.Link>
-            <Nav.Link href="#link">Cinemas</Nav.Link>
-            <Nav.Link href="#link">Buy Tickets</Nav.Link>
+            <Nav className="mr-auto">
+            <Link to={"./#"}><Nav.Link >Home</Nav.Link></Link>
+            <Link to={"./#"}><Nav.Link >Payment</Nav.Link></Link>
+            <Link to={"./#"}><Nav.Link >Profile</Nav.Link></Link>
           </Nav>
           <NavDropdown title="Location" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Jakarta</NavDropdown.Item>
