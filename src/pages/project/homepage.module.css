@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.row1 {
+  height: max-content;
+}
+
+.tagline {
+  padding: 0px 0px;
+  padding-top: 239px;
+  padding-bottom: 239px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tagline1 {
+  opacity: 70%;
+}
+
+.tagline2 {
+  color: #5F2EEA;
+}
+
+.bannerContainer {
+  padding-top: 10%;
+  padding-bottom: 0%;
+  align-items: center;
+}
+
+.img1 {
+  padding-top: 150px;
+}
+
+.img2 {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.img3 {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.row2 {
+  background-color: #F5F6F8;
+  ;
+}
+
+.midNav {
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+.nowShowing {
+  padding-top: 5%;
+  padding-left: 10%;
+  color: #5F2EEA;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+}
+
+.viewMore {
+  padding-top: 5%;
+  padding-right: 10%;
+  color: #5F2EEA;
+  font-family: 'Mulish', sans-serif;
+  text-align: end;
+  font-weight: bold;
+}
+
+.cardContainer {
+  padding-top: 2%;
+}
+
+.row3 {
+  background-color: white;
+}
+
+.buttons {
+  padding-top: 2%;
+  padding-left: 2%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.button1 {
+  background-color: #5F2EEA;
+  border-color: #5F2EEA;
+  width: 150px;
+  margin-left: 4%;
+  margin-right: 1%;
+  border-radius: 4px;
+  box-shadow: 0px 8px 30px;
+}
+
+.button2 {
+  width: 150px;
+  margin-right: 1%;
+  border-radius: 4px;
+}
+
+.bottomTextContainer {
+  width: 100%;
+  margin-left: 6%;
+  margin-right: 6%;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 16px 32px rgba(0, 0, 255, .2);
+  border-radius: 8px;
+}
+
+.bottomText1 {
+  padding-top: 5%;
+  font-family: 'Mulish', serif;
+  font-weight: bold;
+  opacity: 80%;
+}
+
+.bottomText2 {
+  font-family: 'Mulish', serif;
+  font-weight: bolder;
+  color: #5F2EEA;
+  padding-bottom: 2%;
+}
+
+.emailForm {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 37%;
+  margin-right: 30%;
+}
+
+.joinButton {
+  background-color: #5F2EEA;
+  border-color: #5F2EEA;
+  width: 120px;
+  Margin-right: 1%;
+  border-radius: 4px;
+  box-shadow: 0px 8px 30px;
+}
+
+.joinMessage1 {
+  font-family: 'Mulish', serif;
+  opacity: 80%;
+  font-weight: bold;
+}
+
+.joinMessage2 {
+  font-family: 'Mulish', serif;
+  opacity: 80%;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+.copyRight {
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  opacity: 80%;
+  padding-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.seat {
+  width: 20px;
+  height: 20px;
+  border-radius: 25%;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+.seatAvailable {
+  background-color: #d6d8e7;
+}
+
+.seatSelected {
+  background-color: #5F2EEA;
+}
+
+.seatSold {
+  background-color: #6E7191;
+}
+
+.rowSeat {
+  flex-wrap: nowrap;
+}
+
+.colSeat {
+  padding: 0 5px
+}

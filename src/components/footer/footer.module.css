@@ -1,0 +1,54 @@
+.footerEl1 {
+  padding-top: 10%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.footerText1 {
+  margin-top: 4%;
+  font-weight: bold;
+  font-family: 'Mulish', serif;
+  opacity: 80%;
+}
+
+.footerText2 {
+  margin-top: 0px;
+  font-weight: bold;
+  font-family: 'Mulish', serif;
+  opacity: 80%;
+}
+
+.footerText3 {
+  margin-top: 54%;
+  font-weight: bolder;
+  font-family: 'Mulish', serif;
+  opacity: 80%;
+}
+
+.footerText4 {
+  margin-top: 0px;
+  font-weight: normal;
+  font-family: 'Mulish', serif;
+  opacity: 80%;
+}
+
+.cinemaLogo1 {
+  width: 100px;
+}
+
+.cinemaLogo2 {
+  width: 50%;
+  padding-top: 10%;
+}
+
+.cinemaLogo3 {
+  padding-top: 10%;
+}
+
+.socialMediaFooter {
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  opacity: 80%;
+  padding-left: 0px;
+  padding-bottom: 10px;
+}

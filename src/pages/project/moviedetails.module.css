@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.row1 {
+  padding-top: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.row2 {
+  padding-top: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
+  background-color: #F5F6F8;
+}
+
+.cardContainer {
+  background-color:white;
+  width: 332px;
+  height: 458px;
+  border: gray;
+  border-radius: 25px;
+  border: 2px solid #DEDEDE
+}
+
+.movieImage {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 8%;
+  border-radius: 25px;
+}
+
+.movieTitle {
+  font-family: 'Mulish', serif;
+  font-weight: bold;
+}
+
+.category {
+  font-family: 'Mulish', serif;
+  color: grey;
+}
+
+.details {
+  padding-top: 4%;
+}
+
+.detailHead {
+  font-family: 'Mulish', serif;
+  font-weight: bolder;
+  color: grey;
+  padding-bottom: 0%;
+}
+
+.detailElement {
+  padding-top: 0%;
+  font-weight: bold;
+  font-family: 'Mulish', serif;
+}
+
+.synopsisHead {
+  font-weight: bold;
+  font-family: 'Mulish', serif;
+  color: gray;
+  padding-top: 5%;
+}
+
+.synopsisBody {
+  font-weight: bold;
+  font-family: 'Mulish', serif;
+}

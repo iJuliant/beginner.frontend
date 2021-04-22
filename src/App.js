@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react"
+import {
+  BrowserRouter as Router, 
+  Switch, 
+  Route
+} from "react-router-dom"
+import BasicReact from "./pages/learning/basic-react/basic-react"
+import BasicHome from "./pages/learning/homePage/home"
+import BasicMovieDetail from "./pages/learning/movieDetail/movieDetail"
+import Home from "./pages/project/homepage"
+import MovieDetails from "./pages/project/moviedetails"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route path="/learning/basic-react" exact component={BasicReact} />
+          <Route path="/learning/basic-home" exact component={BasicHome} />
+          <Route path="/learning/basic-movieDetail/:id" exact component={BasicMovieDetail} />
+          <Route path="/project/home" exact component={Home}/>
+          <Route path="/project/moviedetails" exact component={MovieDetails}/>
+        </Switch>
+      </Router>
+    )
+  }
 }
 
-export default App;
+export default App
