@@ -8,6 +8,15 @@
 
 .row2 {
   padding-top: 3%;
+  /* margin-left: 4%;
+  margin-right: 4%; */
+  background-color: #F5F6F8;
+}
+
+.row21 {
+  padding-top: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
   background-color: #F5F6F8;
 }
 
@@ -70,5 +79,29 @@
 .showTimes {
   font-weight: bold;
   font-family: 'Mulish', serif;
-  align-tracks: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropDown1 {
+  margin-right: 0%;
+}
+
+.dropDown2 {
+  margin-right: 50%;
+}
+
+.viewMore {
+  font-weight: bold;
+  font-family: 'Mulish', serif;
+  text-align: center;
+}
+
+.copyRight {
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  opacity: 80%;
+  padding-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
 }

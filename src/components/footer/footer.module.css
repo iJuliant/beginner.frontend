@@ -1,5 +1,4 @@
 .footerEl1 {
-  padding-top: 10%;
   margin-left: 6%;
   margin-right: 6%;
 }
@@ -19,7 +18,7 @@
 }
 
 .footerText3 {
-  margin-top: 54%;
+  /* margin-top: 54%; */
   font-weight: bolder;
   font-family: 'Mulish', serif;
   opacity: 80%;

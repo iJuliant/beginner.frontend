@@ -1,15 +1,53 @@
 import React, { Component } from "react";
+import axios from "axios";
 import styles from "./homepage.module.css";
 import NavBar from "../../components/navbar/NavBar";
-import Footer from "../../components/footer/footer"
-import Cards from "../../components/learning/cardContainer"
-import { Container, Row, Col, Button, Form} from 'react-bootstrap';
+import Footer from "../../components/footer/footer";
+import NowShowing from "../../components/nowShowing/nowShowing"
+import { Container, Row, Col, Button, Form, Card } from 'react-bootstrap';
 import Banner from "../../assets/banner-aio.png"
+import { Link } from "react-router-dom";
+import axiosApiIntances from "../../utils/axios"
 
 class Home extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props)
+    this.state = {
+      formm: {
+        movieName: '',
+        movieCategory: '',
+        movieReleaseDate: ''
+      },
+      data: [],
+      dataByMonth: [],
+      pagination: {},
+      page: 1,
+      limit: 3
+    };
   }
+
+  componentDidMount() {
+    this.getData()
+  }
+
+  getData = () => {
+    console.log("getData!");
+    axiosApiIntances
+      .get("movie?page=1&limit=10")
+      .then((res) => {
+      console.log(res);
+      this.setState({ data: res.data.data, pagination: res.data.pagination })
+    })
+      .catch((err) => {
+      console.log(err);
+    })
+  };
+
+  handleParams = (id, event) => {
+    console.log("Go To Movie Detail Page !");
+    // console.log(this.props);
+    this.props.history.push(`/learning/basic-movie-detail?movieId=${id}`);
+  };
 
   render() {
     return (
@@ -37,7 +75,30 @@ class Home extends Component {
           <Col md={6}>
             <h6 className={styles.viewMore}>view all</h6>
           </Col>
-          <Cards />
+          <Row className={styles.cards}>
+          {this.state.data.map((item, index) => {
+              return (
+                 <Col md={4} key = {index}>
+                  <Row className={styles.rowCard}>
+                    <Card style={{ width: '11rem' }} className={styles.cardOne}>
+                      <Card.Img className={styles.cardImage} variant="top" src={item.movie_cover} />
+                      <Card.Body className={styles.cardBody}>
+                        <Card.Title>{item.movie_title}</Card.Title>
+                        <p>{item.movie_category}</p>
+                        <p>{item.movie_release_date.slice(0, 10)}</p>
+                        <Link to={`/project/moviedetails/:${item.movie_id}/`}>
+                          <Button variant="primary"
+                          // onClick={(event) => this.handleParams(`${item.movie_id}`, event)}
+                          >Details
+                          </Button>
+                        </Link>
+                    </Card.Body>
+                  </Card>
+                  </Row>
+                </Col>
+              );
+            })}
+          </Row>
         </Row>
 
         <Row className={styles.row3}>
@@ -56,9 +117,32 @@ class Home extends Component {
           <Button className={styles.button2} variant="outline-primary">September</Button>{' '}
           <Button className={styles.button2} variant="outline-primary">October</Button>{' '}
           <Button className={styles.button2} variant="outline-primary">November</Button>{' '}
-          <Button className={styles.button2} variant="outline-primary">December</Button>{' '}
           </div>
-          <Cards />
+          <Row className={styles.cards}>
+          {this.state.data.map((item, index) => {
+              return (
+                 <Col md={4} key = {index}>
+                  <Row className={styles.rowCard}>
+                    <Card style={{ width: '11rem' }} className={styles.cardOne}>
+                      <Card.Img className={styles.cardImage} variant="top" src={item.movie_cover} />
+                      <Card.Body className={styles.cardBody}>
+                        <Card.Title>{item.movie_title}</Card.Title>
+                        <p>{item.movie_category}</p>
+                        <p>{item.movie_release_date.slice(0, 10)}</p>
+                        <Link to={`/project/moviedetails/:${item.movie_id}/`}>
+                          <Button variant="primary"
+                          // onClick={(event) => this.handleParams(`${item.movie_id}`, event)}
+                          >Details
+                          </Button>
+                        </Link>
+                    </Card.Body>
+                  </Card>
+                  </Row>
+                </Col>
+              );
+            })}
+          </Row>
+
           <div className={styles.bottomTextContainer}>
             <h4 className={styles.bottomText1}>Be the vanguard of the</h4>
             <h1 className={styles.bottomText2}>Movie Goers</h1>

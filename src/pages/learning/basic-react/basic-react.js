@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import "./basic-react.css"
 import styles from "./basic-react.module.css"
 import "./basic-react.module.css"
 import {Link} from "react-router-dom"

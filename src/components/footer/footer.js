@@ -8,7 +8,7 @@ import facebook from "../../assets/eva_facebook-outline.png"
 import twitter from "../../assets/eva_twitter-outline.png"
 import youtube from "../../assets/feather_youtube.png"
 import instagram from "../../assets/bx_bxl-instagram.png"
-import { Container, Row, Col, Button, Form, InputGroup, FormControl } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 
 class Footer extends Component {
@@ -20,7 +20,7 @@ class Footer extends Component {
             <p className={styles.footerText1}>Stop waiting in line. Buy tickets,</p>
             <p className={styles.footerText2}>Conveniently, watch movie quitely</p>
           </Col>
-          <Col>
+          <Col className={styles.footerEl1}>
             <p className={styles.footerText3}>Explore</p>
             <p className={styles.footerText4}>Cinemas</p>
             <p className={styles.footerText4}>Movie List</p>

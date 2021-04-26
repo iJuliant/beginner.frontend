@@ -34,10 +34,12 @@ class Home extends Component {
     const { page, limit } = this.state;
     this.setState({ isLoading: true });
     axiosApiIntances
-      .get(`movie?page=${page}&limit=${limit}`)
+      .get("movie?page=${page}&limit=${limit}")
       .then((res) => {
-        // console.log(res);
+        console.log(res);
         this.setState({ data: res.data.data, pagination: res.data.pagination });
+        console.log(this.pagination)
+        console.log(this.data)
       })
       .catch((err) => {
         console.log(err.response);
